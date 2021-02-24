@@ -1,0 +1,19 @@
+﻿@page "/preview"
+@inject HttpClient Http
+@inherits TheHopPages.Models.MarkdownEditorBase
+
+<div class="row">
+    <div class="col-12">
+        @((MarkupString) Preview)
+    </div>
+</div>
+
+@code {
+    // TODO CH: This page is a demo of what can be build using the markdown editor
+    // At some point we can just delete this file
+
+    protected override async Task OnInitializedAsync()
+    {
+        Body = await Http.GetStringAsync("pages/my-first-page.md");
+    }
+}

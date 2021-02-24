@@ -1,0 +1,14 @@
+[
+  {
+    "title": "IT Avonturen",
+    "url": "it-avonturen",
+    "items": [
+      {
+        "title": "My first page",
+        "file": "my-first-page.md",
+        "highlight": true,
+        "private": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+﻿@page "/edit"
+@inherits TheHopPages.Models.MarkdownEditorBase
+
+<div class="row">
+    <div class="col-6">
+        <textarea class="form-control"
+                  @bind-value="Body"
+                  @bind-value:event="oninput">
+        </textarea>
+    </div>
+    <div class="col-6">
+        @((MarkupString) Preview)
+    </div>
+</div>
+
+@code {
+    // TODO CH: This page is a demo of what can be build using the markdown editor
+    // At some point we can just delete this file
+}
